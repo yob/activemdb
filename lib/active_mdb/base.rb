@@ -170,8 +170,11 @@ module ActiveMDB
     
     def method_missing(method_id, *args, &block)
        method_name = MDBTools.methodize(method_id.to_s)
+       spaced_method_name = method_name.gsub("_"," ")
        if @attributes.include?(method_name)
          value = @attributes[method_name]
+       elsif @attributes.include?(spaced_method_name)
+         value = @attributes[spaced_method_name]
        else
          super
        end
