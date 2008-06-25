@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.email             = "automatthew@gmail.com"
   s.homepage          = "http://activemdb.rubyforge.org/"
   s.has_rdoc          = true
-  s.test_files        = ["test/**/*.rb"]
-  s.files             = ["lib/**/*.rb","Rakefile","README.txt"]
+  s.test_files        = Dir.glob("test/**/*.rb")
+  s.files             = Dir.glob("lib/**/*.rb") + ["Rakefile","README.txt"]
 end
