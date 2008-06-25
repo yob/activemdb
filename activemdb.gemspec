@@ -1,8 +1,6 @@
-require File.join(File.dirname(__FILE__), "lib", "active_mdb.rb")
-
 Gem::Specification.new do |s|
   s.name              = "activemdb"
-  s.version           = ActiveMDB::VERSION
+  s.version           = "0.2.2"
   s.summary           = "ActiveRecordy wrapper around MDB Tools, allowing POSIX platforms to read MS Access (.mdb) files"
   s.description       = "ActiveRecordy wrapper around MDB Tools, allowing POSIX platforms to read MS Access (.mdb) files"
   s.author            = "Matthew King"
